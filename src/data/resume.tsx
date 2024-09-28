@@ -90,7 +90,7 @@ export const DATA = {
   education: [
     {
       school: "Bharati Vidyapeeth's College of Engineering",
-      href: "https://bvcoe.bharatividyapeeth.edu/",
+      href: "",
       degree: "Bachelor's Degree of Computer Engineering",
       logoUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgqfQzC_IS038iujinz4yAE1zRW2z-2cX5YI459Oy8zm9VLa3b9OcMG2AyJdlmJMltO8&usqp=CAU",
