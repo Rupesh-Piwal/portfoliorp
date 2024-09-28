@@ -63,28 +63,28 @@ export const DATA = {
   work: [
     {
       company: "Jio Platforms",
-      href: "https://atomic.finance",
+      href: "",
       badges: [],
       location: "Remote",
       title: "Project Intern",
       logoUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSohZW0W9TJymIUxUO7wDwLLWzxdugPz5FiRw&s",
-      start: "August 2024",
+      start: "Aug 2024",
       end: "Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Currently integrating speech-to-text APIs for real-time transcription of doctor-patient conversations. Leveraging LLMs to generate structured medical reports, automating diagnosis and recommendations, improving healthcare documentation accuracy, and collaborating with teams to optimize workflows and reporting processes.",
     },
     {
       company: "Perfect Software Solutions",
       badges: [],
-      href: "https://shopify.com",
+      href: "",
       location: "Aurangabad",
       title: "Frontend Intern",
       logoUrl: "/PSS-Logo.png",
-      start: "January 2024",
-      end: "March 2024",
+      start: "Jan 2024",
+      end: "Mar 2024",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Crafted pixel-perfect React components from Figma designs, integrating advanced animations with FramerMotion to enhance the UI/UX of flagship products, ensuring a seamless and engaging user experience(UX).",
     },
   ],
   education: [
@@ -99,7 +99,7 @@ export const DATA = {
     },
     {
       school: "R.J Internation Jr.College",
-      href: "https://uwaterloo.ca",
+      href: "",
       degree: "Higher Secondary Certificate",
       logoUrl:
         "https://pbs.twimg.com/profile_images/782094004326326272/CrOompRP_400x400.jpg",
@@ -108,7 +108,7 @@ export const DATA = {
     },
     {
       school: "Chate School",
-      href: "https://wlu.ca",
+      href: "",
       degree: "Secondary School Certificate",
       logoUrl: "/chate.png",
       start: "2006",
