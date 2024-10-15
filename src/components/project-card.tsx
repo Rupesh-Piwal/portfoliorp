@@ -102,9 +102,12 @@ export function ProjectCard({
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
               <Link href={link?.href} key={idx} target="_blank">
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
-                  {link.icon}
+                <Badge
+                  key={idx}
+                  className="flex flex-row items-center gap-2 px-2 py-1 text-[12px]  border border-slate-700 text-white bg-slate-900  hover:border-slate-500 hover:bg-slate-800"
+                >
                   {link.type}
+                  {link.icon}
                 </Badge>
               </Link>
             ))}

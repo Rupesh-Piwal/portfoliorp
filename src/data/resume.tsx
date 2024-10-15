@@ -8,7 +8,7 @@ export const DATA = {
   location: "Pune, India",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Capable of handling end-to-end fullstack projects and codebases. Excels in collaborative work environments, adept at both independent and team-based projects.",
+    "Capable of handling end-to-end fullstack projects and codebases.",
   // summary:
   //   "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/RP's_DP.jpeg",
@@ -135,7 +135,7 @@ export const DATA = {
         {
           type: "Live",
           href: "https://talent-hire-xi.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.external className="size-3" />,
         },
         {
           type: "Source",
@@ -162,9 +162,9 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "Live",
           href: "https://code-canvas-alpha.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.external className="size-3" />,
         },
         {
           type: "Source",

@@ -5,9 +5,11 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { FaCircle } from "react-icons/fa6";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -22,13 +24,22 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`${DATA.name.split(" ")[0]} Piwal `}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl text-slate-400"
+                className="max-w-[600px] text-[18px] md:text-2xl text-slate-400"
+                delay={BLUR_FADE_DELAY}
+                text="Full-Stack Developer"
+              />
+              <BlurFadeText
+                className="max-w-[600px] text-[14px]  md:text-lg text-slate-600"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <HoverBorderGradient className="flex flex-row items-center gap-2">
+                <FaCircle className="size-2 animate-pulse fill-green-600 text-green-600" />
+                Available for work
+              </HoverBorderGradient>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
