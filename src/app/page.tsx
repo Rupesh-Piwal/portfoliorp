@@ -11,7 +11,7 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { FaCircle } from "react-icons/fa6";
 
-const BLUR_FADE_DELAY = 0.04;
+const BLUR_FADE_DELAY = 0.06;
 
 export default function Page() {
   return (
@@ -36,10 +36,12 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              <HoverBorderGradient className="flex flex-row items-center gap-2">
-                <FaCircle className="size-2 animate-pulse fill-green-600 text-green-600" />
-                Available for work
-              </HoverBorderGradient>
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <HoverBorderGradient className="flex flex-row items-center gap-2">
+                  <FaCircle className="size-2 animate-pulse fill-green-600 text-green-600" />
+                  Available for work
+                </HoverBorderGradient>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
