@@ -17,12 +17,15 @@ export const DATA = {
     "JavaScript",
     "Next.js",
     "Typescript",
+    "Zustand",
     "Redux",
     "Tailwind CSS",
+    "Express.js",
     "Node.js",
     "Postgres",
     "MongoDB",
     "Docker",
+    "AWS",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -72,7 +75,7 @@ export const DATA = {
       start: "Aug 2024",
       end: "Present",
       description:
-        "Currently integrating speech-to-text APIs for real-time transcription of doctor-patient conversations. Leveraging LLMs to generate structured medical reports, automating diagnosis and recommendations, improving healthcare documentation accuracy, and collaborating with teams to optimize workflows and reporting processes.",
+        "Currently integrating gRPC backends into the BTP project’s transcription client via persistent socket connections to ensure ultra-low-latency data streaming. Leveraging advanced LLM pipelines for dynamically generating structured medical documentation, automating diagnostic insights, and streamlining clinical recommendation workflows. Implementing scalable microservices architecture to optimize healthcare data ingestion and processing. Collaborating with cross-functional teams to refine asynchronous data flow, enhance real-time event-driven architecture, and elevate end-to-end healthcare documentation precision.",
     },
     {
       company: "Perfect Software Solutions",
