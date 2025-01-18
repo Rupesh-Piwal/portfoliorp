@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { FaCircle } from "react-icons/fa6";
 import Markdown from "react-markdown";
 
 interface Props {
@@ -26,6 +27,7 @@ interface Props {
     href: string;
   }[];
   className?: string;
+  isLive?: boolean;
 }
 
 export function ProjectCard({
@@ -39,6 +41,7 @@ export function ProjectCard({
   video,
   links,
   className,
+  isLive = false,
 }: Props) {
   return (
     <Card
@@ -57,7 +60,7 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
           />
         )}
         {image && (
@@ -72,7 +75,11 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+          <div className="flex items-center gap-2">
+            <CardTitle className="mt-1 text-base">{title}</CardTitle>
+
+            <FaCircle className="size-2 animate-pulse fill-green-600 text-green-600" />
+          </div>
           <time className="font-sans text-xs">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
@@ -104,7 +111,7 @@ export function ProjectCard({
               <Link href={link?.href} key={idx} target="_blank">
                 <Badge
                   key={idx}
-                  className="flex flex-row items-center gap-2 px-2 py-1 text-[12px]  border border-slate-700 text-white bg-slate-900  hover:border-slate-500 hover:bg-slate-800"
+                  className="flex flex-row items-center gap-2 px-2 py-1 text-[12px] border border-slate-700 text-white bg-slate-900 hover:border-slate-500 hover:bg-slate-800"
                 >
                   {link.type}
                   {link.icon}

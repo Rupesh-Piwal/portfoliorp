@@ -120,6 +120,72 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Ichofy",
+      href: "https://ichofy.onrender.com",
+      dates: "Nov 2024 - Jan 2025",
+      active: true,
+      description:
+        "Architected a high-performance MERN web app for [1000+]() users with optimized queries and Zustand state management. Built a [WebSocket]() chat with sub-50ms latency. Developed an analytics dashboard using [MongoDB Aggregation](), automating reports and improving decision-making by [60%]().",
+      technologies: [
+        "Reactjs",
+        "Zustand",
+        "Nodejs",
+        "Expressjs",
+        "MongoDB",
+        "Socket.io",
+        "Clerk Auth",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Live",
+          href: "https://ichofy.onrender.com/",
+          icon: <Icons.external className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Rupesh-Piwal/Ichofy",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/ichofy_thumbnail.png",
+      video: "",
+    },
+    {
+      title: "Zapchat",
+      href: "http://zapchat-kbke.onrender.com",
+      dates: "Nov 2024 - Dec 2024",
+      active: true,
+      description:
+        "Built a scalable MERN chat app with 99.9% uptime, supporting [100+]() users via [Socket.io](). Secured sessions with JWT authentication. Optimized media uploads with Cloudinary, improving performance by 40%. Added [2ms]() haptic feedback using the [Vibration API](), real-time indicators, and read receipts for engagement.",
+      technologies: [
+        "Reactjs",
+        "Zustand",
+        "Nodejs",
+        "Expressjs",
+        "MongoDB",
+        "Socket.io",
+        "JWT Auth",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Live",
+          href: "http://zapchat-kbke.onrender.com",
+          icon: <Icons.external className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Rupesh-Piwal/zapchat",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/zapchat-thumbnail.png",
+      video: "",
+    },
+    {
       title: "Talent Hire",
       href: "https://talent-hire-xi.vercel.app/",
       dates: "Aug 2024 - Sep 2024",
@@ -146,7 +212,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/talent-hire-poster.png",
+      image: "/talenthire_thumbnail.png",
       video: "",
     },
     {

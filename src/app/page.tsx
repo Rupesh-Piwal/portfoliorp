@@ -1,13 +1,17 @@
+"use client";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import { FaCircle } from "react-icons/fa6";
+import { FaFileAlt } from "react-icons/fa";
+import { ShinyButton } from "@/components/ui/shiny-button";
 
 const BLUR_FADE_DELAY = 0.06;
 
@@ -34,15 +38,29 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              <BlurFade delay={BLUR_FADE_DELAY}>
-                <HoverBorderGradient className="flex flex-row items-center gap-2">
-                  <FaCircle className="size-2 animate-pulse fill-green-600 text-green-600" />
-                  Available for work
-                </HoverBorderGradient>
-              </BlurFade>
+              <div className="flex flex-row items-center gap-6">
+                <BlurFade delay={BLUR_FADE_DELAY}>
+                  <HoverBorderGradient className="flex flex-row items-center gap-2">
+                    <FaCircle className="size-2 animate-pulse fill-green-600 text-green-600" />
+                    Available for work
+                  </HoverBorderGradient>
+                </BlurFade>
+                <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                  <ShinyButton>
+                    <Link
+                      href="https://drive.google.com/file/d/196oEqzqVt_zX5Wj4nyYTqSDRBeAvAFKS/view?usp=sharing"
+                      target="_blank"
+                      className="flex flex-row items-center"
+                    >
+                      <FaFileAlt className="mr-2" />
+                      View Resume
+                    </Link>
+                  </ShinyButton>
+                </BlurFade>
+              </div>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-28 border-4 border-purple-500">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
