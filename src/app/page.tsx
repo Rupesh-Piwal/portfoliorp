@@ -9,9 +9,9 @@ import { Button } from "@/components/ui/button";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
-import { FaCircle } from "react-icons/fa6";
+import { FaCircle, FaEnvelope } from "react-icons/fa6";
 import { FaFileAlt } from "react-icons/fa";
-import { ShinyButton } from "@/components/ui/shiny-button";
+import ShinyButton from "@/components/ui/shiny-button";
 
 const BLUR_FADE_DELAY = 0.06;
 
@@ -38,33 +38,29 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              <div className="flex flex-row items-center gap-6">
+              <div className="flex flex-row items-center gap-3 md:gap-6">
                 <BlurFade delay={BLUR_FADE_DELAY}>
-                  <HoverBorderGradient className="flex flex-row items-center gap-2">
+                  <HoverBorderGradient className="flex flex-row items-center gap-3 py-1.5 text-[12px] md:text-[16px]">
                     <FaCircle className="size-2 animate-pulse fill-green-600 text-green-600" />
                     Available for work
                   </HoverBorderGradient>
                 </BlurFade>
                 <BlurFade delay={BLUR_FADE_DELAY * 2}>
                   <ShinyButton>
-                    <Link
-                      href="https://drive.google.com/file/d/1T5wvH500lidVkPbwOqoLEce-8FEHjzns/view?usp=sharing"
-                      target="_blank"
-                      className="flex flex-row items-center"
-                    >
+                    <div className="flex flex-row items-center text-[12px] md:px-4 md:py-2">
                       <FaFileAlt className="mr-2" />
-                      View Resume
-                    </Link>
+                      View My Resume
+                    </div>
                   </ShinyButton>
                 </BlurFade>
               </div>
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border-4 border-purple-500">
+            {/* <BlurFade delay={BLUR_FADE_DELAY}>
+              <Avatar className="size-20 border-4 border-purple-500">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
-            </BlurFade>
+            </BlurFade> */}
           </div>
         </div>
       </section>
@@ -204,6 +200,16 @@ export default function Page() {
               </p>
             </div>
           </BlurFade>
+          <div className="flex items-center justify-center gap-4 text-[16px] font-semibold">
+            Hire Me 👉
+            <a
+              href="mailto:rpiwal02@gmail.com"
+              className="text-xl text-blue-600 hover:text-blue-600"
+              title="Reach out to me via Gmail"
+            >
+              <FaEnvelope className="text-4xl" />
+            </a>
+          </div>
         </div>
       </section>
     </main>
