@@ -75,7 +75,7 @@ export const DATA = {
       start: "Aug 2024",
       end: "Present",
       description:
-        "Currently integrating gRPC backends into the BTP project’s transcription client via persistent socket connections to ensure ultra-low-latency data streaming. Leveraging advanced LLM pipelines for dynamically generating structured medical documentation, automating diagnostic insights, and streamlining clinical recommendation workflows. Implementing scalable microservices architecture to optimize healthcare data ingestion and processing. Collaborating with cross-functional teams to refine asynchronous data flow, enhance real-time event-driven architecture, and elevate end-to-end healthcare documentation precision.",
+        "Engineered precise data transmission protocols using Protocol Buffers, ensuring type-safe interactions thatimproved efficiency in medical documentation workflows, reducing dictation submission time by an average of 10 seconds.Integrated Socket.IO with a gRPC server to enable real-time audio streaming via Protocol Buffers,facilitating efficient and seamless communication between client and server.",
     },
     {
       company: "Perfect Software Solutions",
