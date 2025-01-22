@@ -75,7 +75,7 @@ export const DATA = {
       start: "Aug 2024",
       end: "Present",
       description:
-        "Engineered precise data transmission protocols using Protocol Buffers, ensuring type-safe interactions thatimproved efficiency in medical documentation workflows, reducing dictation submission time by an average of 10 seconds.Integrated Socket.IO with a gRPC server to enable real-time audio streaming via Protocol Buffers,facilitating efficient and seamless communication between client and server.",
+        "Engineered precise data transmission protocols using Protocol Buffers, ensuring type-safe interactions thatimproved efficiency in medical documentation workflows.Integrated Socket.IO with a gRPC server to enable real-time audio streaming via Protocol Buffers,facilitating efficient and seamless communication between client and server.",
     },
     {
       company: "Perfect Software Solutions",
@@ -125,7 +125,7 @@ export const DATA = {
       dates: "Nov 2024 - Jan 2025",
       active: true,
       description:
-        "Architected a high-performance MERN web app for [1000+]() users with optimized queries and Zustand state management. Built a [WebSocket]() chat with sub-50ms latency. Developed an analytics dashboard using [MongoDB Aggregation](), automating reports and improving decision-making by [60%]().",
+        "Architected a high-performance MERN web app for [1000+]() users with optimized queries and Zustand state management. Built a [WebSocket]() chat with sub-50ms latency. Developed an analytics dashboard using [MongoDB Aggregation](), automating reports and improving decision-making.",
       technologies: [
         "Reactjs",
         "Zustand",
@@ -217,7 +217,7 @@ export const DATA = {
     },
     {
       title: "CodeCanvas",
-      href: "https://code-canvas-alpha.vercel.app/",
+      href: "https://code-canvas-alpha1.vercel.app",
       dates: "September 2024 - September 2024",
       active: true,
       description:
@@ -232,7 +232,7 @@ export const DATA = {
       links: [
         {
           type: "Live",
-          href: "https://code-canvas-alpha.vercel.app/",
+          href: "https://code-canvas-alpha1.vercel.app/",
           icon: <Icons.external className="size-3" />,
         },
         {

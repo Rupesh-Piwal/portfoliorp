@@ -32,7 +32,7 @@ export default function Page() {
                 text="Full-Stack Developer"
               />
               <BlurFadeText
-                className="max-w-[600px] text-[14px]  md:text-lg text-slate-600"
+                className="max-w-[600px] text-[14px]  md:text-lg text-slate-500"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
