@@ -120,6 +120,39 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "FinSync",
+      href: "https://finsyncai.vercel.app",
+      dates: "Mar 2025 - June 2025",
+      active: true,
+      description:
+        "Built an AI-powered finance app with real-time tracking, smart budgeting, and dynamic dashboards.Used [Gemini 1.5]() Flash for [90%+ accurate]() receipt scanning and [auto-logging of transactions]().Automated alerts, reminders, and [reports]() using Inngest to boost engagement and retention.Secured access with Arcjet [rate limiting]() and bot protection for safe, scalable performance.",
+      technologies: [
+        "Nextjs",
+        "PostgreSQL",
+        "Docker",
+        "Gemini AI",
+        "Nodejs",
+        "Prisma",
+        "Clerk Auth",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Live",
+          href: "https://finsyncai.vercel.app",
+          icon: <Icons.external className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Rupesh-Piwal/finsync",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/finsyncai-logo.png",
+      video: "",
+    },
+    {
       title: "Ichofy",
       href: "https://ichofy.onrender.com",
       dates: "Nov 2024 - Jan 2025",
