@@ -149,7 +149,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/finsyncai-logo.png",
+      image: "/fnsync.png",
       video: "",
     },
     {
