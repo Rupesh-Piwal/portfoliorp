@@ -186,6 +186,35 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Website Generator",
+      href: "https://webgn-ai.vercel.app/",
+      dates: "July 2025",
+      active: true,
+      description:
+        "Built as a rapid assignment in under [6 hours](), this AI-powered website builder leverages [Gemini 1.5]() Flash to generate [multi-page sites]() from plain-text prompts, featuring live iframe editing, theme customization, [CMS-style navigation](), and a clean, modern UI.",
+      technologies: [
+        "Nextjs",
+        "Gemini AI",
+        "Nodejs",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Live",
+          href: "https://webgn-ai.vercel.app/",
+          icon: <Icons.external className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Rupesh-Piwal/ai-web-gen",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/web-gen.png",
+      video: "",
+    },
+    {
       title: "Zapchat",
       href: "http://zapchat-kbke.onrender.com",
       dates: "Nov 2024 - Dec 2024",
