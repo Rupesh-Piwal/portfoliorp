@@ -201,7 +201,7 @@ export default function Page() {
           <div className="flex items-center justify-center gap-4 text-[16px] font-semibold">
             Hire Me 👉
             <a
-              href="mailto:rpiwal02@gmail.com"
+              href="mailto:rpmarch21@gmail.com"
               className="text-xl text-blue-600 hover:text-blue-600"
               title="Reach out to me via Gmail"
             >
