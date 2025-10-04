@@ -22,6 +22,9 @@ export const DATA = {
     "Tailwind CSS",
     "Express.js",
     "Node.js",
+    "Redis",
+    "BullMQ",
+    "Message Queues",
     "Postgres",
     "MongoDB",
     "Docker",
@@ -73,7 +76,7 @@ export const DATA = {
       logoUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSohZW0W9TJymIUxUO7wDwLLWzxdugPz5FiRw&s",
       start: "Aug 2024",
-      end: "Present",
+      end: "May 2025",
       description:
         "Engineered precise data transmission protocols using Protocol Buffers, ensuring type-safe interactions thatimproved efficiency in medical documentation workflows.Integrated Socket.IO with a gRPC server to enable real-time audio streaming via Protocol Buffers,facilitating efficient and seamless communication between client and server.",
     },
@@ -120,6 +123,38 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "VidVault",
+      href: "https://vidsvault.vercel.app/",
+      dates: "Aug 2025 - Oct 2025",
+      active: true,
+      description:
+        "Engineered a scalable video upload system with [AWS S3 presigned URLs]() and [multipart uploads](), ensuring resumable and failure-safe uploads.Built resilient [background jobs with BullMQ + Redis]() (idempotency, exponential backoff), offloaded heavy tasks to workers, and delivered a real-time dashboard with secure share links, previews, and instant alerts.",
+      technologies: [
+        "Nextjs",
+        "AWS",
+        "Redis",
+        "BullMQ",
+        "PostgreSQL",
+        "Nodejs",
+        "Express",
+        "Supabase Auth",
+      ],
+      links: [
+        {
+          type: "Live",
+          href: "https://vidsvault.vercel.app",
+          icon: <Icons.external className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Rupesh-Piwal/video-vault/blob/main/README.md",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/dashboard.png",
+      video: "",
+    },
+    {
       title: "FinSync",
       href: "https://finsyncai.vercel.app",
       dates: "Mar 2025 - June 2025",
@@ -145,7 +180,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/Rupesh-Piwal/finsync",
+          href: "https://github.com/Rupesh-Piwal/finsync/blob/main/README.md",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -178,7 +213,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/Rupesh-Piwal/Ichofy",
+          href: "https://github.com/Rupesh-Piwal/Ichofy/blob/main/Readme.md",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -207,46 +242,14 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/Rupesh-Piwal/ai-web-gen",
+          href: "https://github.com/Rupesh-Piwal/ai-web-gen/blob/main/README.md",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/web-gen.png",
       video: "",
     },
-    {
-      title: "Zapchat",
-      href: "http://zapchat-kbke.onrender.com",
-      dates: "Nov 2024 - Dec 2024",
-      active: true,
-      description:
-        "Built a scalable MERN chat app with 99.9% uptime, supporting [100+]() users via [Socket.io](). Secured sessions with JWT authentication. Optimized media uploads with Cloudinary, improving performance by 40%. Added [2ms]() haptic feedback using the [Vibration API](), real-time indicators, and read receipts for engagement.",
-      technologies: [
-        "Reactjs",
-        "Zustand",
-        "Nodejs",
-        "Expressjs",
-        "MongoDB",
-        "Socket.io",
-        "JWT Auth",
-        "TailwindCSS",
-        "Shadcn UI",
-      ],
-      links: [
-        {
-          type: "Live",
-          href: "http://zapchat-kbke.onrender.com",
-          icon: <Icons.external className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Rupesh-Piwal/zapchat",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/zapchat-thumbnail.png",
-      video: "",
-    },
+
     {
       title: "Talent Hire",
       href: "https://talent-hire-xi.vercel.app/",
@@ -304,6 +307,39 @@ export const DATA = {
         },
       ],
       image: "/canvas.png",
+      video: "",
+    },
+    {
+      title: "Zapchat",
+      href: "http://zapchat-kbke.onrender.com",
+      dates: "Nov 2024 - Dec 2024",
+      active: true,
+      description:
+        "Built a scalable MERN chat app with 99.9% uptime, supporting [100+]() users via [Socket.io](). Secured sessions with JWT authentication. Optimized media uploads with Cloudinary, improving performance by 40%. Added [2ms]() haptic feedback using the [Vibration API](), real-time indicators, and read receipts for engagement.",
+      technologies: [
+        "Reactjs",
+        "Zustand",
+        "Nodejs",
+        "Expressjs",
+        "MongoDB",
+        "Socket.io",
+        "JWT Auth",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Live",
+          href: "http://zapchat-kbke.onrender.com",
+          icon: <Icons.external className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Rupesh-Piwal/zapchat",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/zapchat-thumbnail.png",
       video: "",
     },
     // {
