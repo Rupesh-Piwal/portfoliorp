@@ -8,8 +8,10 @@ import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import { FaCircle, FaEnvelope } from "react-icons/fa6";
-import { FaFileAlt } from "react-icons/fa";
+import Image from "next/image";
+import Resume from "../../public/resume.png";
 import ShinyButton from "@/components/ui/shiny-button";
+import { ExternalLink } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.06;
 
@@ -18,7 +20,7 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
+          <div className="gap-2 flex justify-between border border-red-400 px-3 py-7 md:p-8 rounded-xl md:flex-row md:items-center">
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -36,6 +38,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+
               <div className="flex flex-row items-center gap-3 md:gap-6">
                 <BlurFade delay={BLUR_FADE_DELAY}>
                   <HoverBorderGradient className="flex flex-row items-center gap-3 py-1.5 text-[12px] md:text-[16px]">
@@ -43,16 +46,23 @@ export default function Page() {
                     Available for work
                   </HoverBorderGradient>
                 </BlurFade>
-                <BlurFade delay={BLUR_FADE_DELAY * 2}>
-                  <ShinyButton>
-                    <div className="flex flex-row items-center text-[12px] md:px-4 md:py-2">
-                      <FaFileAlt className="mr-2" />
-                      View My Resume
-                    </div>
-                  </ShinyButton>
-                </BlurFade>
               </div>
             </div>
+            <BlurFade delay={BLUR_FADE_DELAY * 2}>
+              <div className="flex flex-col justify-center text-center">
+                <ShinyButton>
+                  <Image
+                    src={Resume}
+                    alt="resume"
+                    className="md:h-[100px] md:w-[100px] rounded cursor-pointer"
+                  />
+                  <span className="text-slate-400">
+                    Resume <ExternalLink />
+                  </span>
+                </ShinyButton>
+              </div>
+            </BlurFade>
+
             {/* <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-20 border-4 border-purple-500">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
