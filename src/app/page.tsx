@@ -12,6 +12,7 @@ import Image from "next/image";
 import Resume from "../../public/resume.png";
 import ShinyButton from "@/components/ui/shiny-button";
 import { ExternalLink } from "lucide-react";
+import LiquidChrome from "@/components/liquid-chrome";
 
 const BLUR_FADE_DELAY = 0.06;
 
@@ -20,8 +21,19 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between border border-red-400 px-3 py-7 md:p-8 rounded-xl md:flex-row md:items-center">
-            <div className="flex-col flex flex-1 space-y-1.5">
+          <div className="section-1 gap-2 flex justify-between px-3 py-7 md:p-8 rounded-2xl md:flex-row md:items-center relative overflow-hidden">
+            {/* LiquidChrome Background */}
+            <div className="absolute inset-0 z-0">
+              <LiquidChrome
+                baseColor={[0.1, 0.1, 0.1]}
+                speed={1}
+                amplitude={0.09}
+                interactive={true}
+              />
+            </div>
+
+            {/* Content with relative positioning to appear above background */}
+            <div className="flex-col flex flex-1 space-y-1.5 relative z-10">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
@@ -29,12 +41,12 @@ export default function Page() {
                 text={`${DATA.name.split(" ")[0]} Piwal `}
               />
               <BlurFadeText
-                className="max-w-[600px] text-[18px] md:text-2xl text-slate-400"
+                className="max-w-[600px] text-[18px] md:text-2xl text-slate-50"
                 delay={BLUR_FADE_DELAY}
                 text="Full-Stack Developer"
               />
               <BlurFadeText
-                className="max-w-[600px] text-[14px]  md:text-lg text-slate-500"
+                className="max-w-[400px] text-[12px]  md:text-lg text-slate-100"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -49,26 +61,19 @@ export default function Page() {
               </div>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 2}>
-              <div className="flex flex-col justify-center text-center">
+              <div className="flex flex-col justify-center items-center text-center relative z-10 mt-5 lg:mt-0 md:mt-0">
                 <ShinyButton>
                   <Image
                     src={Resume}
                     alt="resume"
-                    className="md:h-[100px] md:w-[100px] rounded cursor-pointer"
+                    className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-[100px] lg:w-[100px] rounded cursor-pointer"
                   />
-                  <span className="text-slate-400">
-                    Resume <ExternalLink />
+                  <span className="text-slate-50 flex items-center gap-3 text-sm md:text-base text-[16px]">
+                    Resume <ExternalLink size={12} />
                   </span>
                 </ShinyButton>
               </div>
             </BlurFade>
-
-            {/* <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-20 border-4 border-purple-500">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade> */}
           </div>
         </div>
       </section>
